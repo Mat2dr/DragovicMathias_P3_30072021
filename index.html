@@ -5,28 +5,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
+
+    <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/98d512f75e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <section>
-        <div class="header">
-
+    <section class="header">
+        <div class="header__logo">
+            <img src="/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
         </div>
     </section>
-    <section>
-        <div class="hero">
-            <div class="hero__gps">
-
+    
+    <section class="hero">
+        <div class="hero__gps">
+            <div class="hero__gps__icon">
+                <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="hero__text">
-                <h1>Reservez le menu qui vous convient</h1>
-                <h2>Decouvrez des restorants d'exception, selectionnes par nos soins</h2>
-            </div>
-            <div class="hero__button">
-                
-
-            </div>
-
+            <p>Paris, Belleville</p>
         </div>
+        <div class="hero__text">
+            <h1>Réservez le menu qui vous convient</h1>
+            <h2>Découvrez des restaurants d'exception, selectionnés par nos soins</h2>
+        </div>
+        <div class="hero__button">
+            <button class="hero__button--activ">Explorer nos restaurants</button>
+        </div>
+    </section>
+
+    <section class="fonction">
+        <div class="fonction__titre">
+            <h3>Fonctionnement</h3>
+        </div>
+        <ul class="fonction__button">
+            <li class="fonction__button--active">
+                <div class="fonction__button__numero">
+                    <p>1</p>
+                </div>
+                <div class="fonction__button__icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="fonction__button__titre">
+                    <h2>Choisissez un restaurant</h2>
+                </div>
+            </li>
+
+            <li class="fonction__button--active">
+                <div class="fonction__button__numero">
+                    <p>2</p>
+                </div>
+                <div class="fonction__button__icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="fonction__button__titre">
+                    <h2>Composez votre menu</h2>
+                </div>
+            </li>
+
+            <li class="fonction__button--active">
+                <div class="fonction__button__numero">
+                    <p>3</p>
+                </div>
+                <div class="fonction__button__icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="fonction__button__titre">
+                    <h2>Dégustez au restaurant</h2>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="resto">
+        <div class="resto__titre">
+            <h3>Restaurants</h3>
+        </div>
+        <a class="resto__annonce">
+            <div class="resto__annonce__img">
+                <img src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant La palette du goût">
+            </div>
+            <div class="resto__annonce__titre">
+                <h2>La palette du goût</h2>
+            </div>
+            <div class="resto__annonce__text">
+                <p>Ménilmontant</p>
+            </div>
+            <div class="resto__annonce__icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </a>
+
+        <a class="resto__annonce">
+            <div class="resto__annonce__img">
+                <img src="/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image du restaurant La note enchantée">
+            </div>
+            <div class="resto__annonce__titre">
+                <h2>La note enchantée</h2>
+            </div>
+            <div class="resto__annonce__text">
+                <p>Charonne</p>
+            </div>
+            <div class="resto__annonce__icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </a>
+
+        <a class="resto__annonce">
+            <div class="resto__annonce__img">
+                <img src="/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image du restaurant A la française">
+            </div>
+            <div class="resto__annonce__titre">
+                <h2>A la française</h2>
+            </div>
+            <div class="resto__annonce__text">
+                <p>Cité Rouge</p>
+            </div>
+            <div class="resto__annonce__icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </a>
+
+        <a class="resto__annonce">
+            <div class="resto__annonce__img">
+                <img src="/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image du restaurant Le délice des sens">
+            </div>
+            <div class="resto__annonce__titre">
+                <h2>Le délice des sens</h2>
+            </div>
+            <div class="resto__annonce__text">
+                <p>Folie-Méricourt</p>
+            </div>
+            <div class="resto__annonce__icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </a>
+    </section>
+
+    <section class="footer">
+        <div class="footer__logo">
+            <img src="/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        </div>
+
+        <ul class="footer__ul">
+            <li class="footer__ul__liens">
+                <div class="footer__ul__liens_icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="footer__ul__liens__titre">
+                    <h3>Proposer un restaurant</h3>
+                </div>
+            </li>
+
+            <li class="footer__ul__liens">
+                <div class="footer__ul__liens_icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="footer__ul__liens__titre">
+                    <h3>Devenir partenaire</h3>
+                </div>
+            </li>
+
+            <li class="footer__ul__liens">
+                <div class="footer__ul__liens__titre">
+                    <h3>Mentions légales</h3>
+                </div>
+            </li>
+
+            <li class="footer__ul__liens">
+                <div class="footer__ul__liens__titre">
+                    <h3>Contact</h3>
+                </div>
+            </li>
+        </ul>
+
     </section>
     
 </body>
