@@ -161,20 +161,42 @@ body {
 .resto__annonce {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background: white;
   margin: 15px 0px;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 0 0 10px #0000002e;
 }
 .resto__annonce__img img {
-  height: 7rem;
+  height: 9rem;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 .resto__annonce__content {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.resto__annonce__content__text {
+  padding: 10px 15px;
+}
+.resto__annonce__content__text h2 {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 2px 0px;
+}
+.resto__annonce__content__text p {
+  font-weight: 200;
+  font-size: 15px;
+  padding: 2px 0px;
+}
+.resto__annonce__content__icon {
+  padding: 10px 15px;
+  font-size: 25px;
+  color: #535353;
 }
 
 /*# sourceMappingURL=style.css.map */
