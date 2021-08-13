@@ -97,7 +97,14 @@ body {
         }
     }
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
 .resto {
     display: flex;
     flex-direction: column;
