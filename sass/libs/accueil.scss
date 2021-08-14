@@ -1,3 +1,8 @@
+$rose: #ff79da;
+$violet: #9356dc;
+$grey-text: #353535;
+
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -6,9 +11,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 0px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     &__logo {
-        width: 60%;
+        width: 45%;
     }
 }
 
@@ -21,10 +27,15 @@ body {
         justify-content: center;
         padding: 12px 0px;
         background: #EAEAEA;
-        color: rgb(78, 78, 78);
+        color: $grey-text;
         &__icon {
             padding: 0px 10px;
         }
+        & p {
+            font-size: 17px;
+            font-weight: 300;
+        }
+
     }
 }
 .hero__content{
@@ -33,25 +44,27 @@ body {
 }
 .hero__content__text h1 {
     text-align: center;
-    font-weight: 600;
-    font-size: 25px; 
+    font-weight: 700;
+    font-size: 24px; 
+    margin: 0px 15px;
 }
 .hero__content__text h2 {
     text-align: center;
-    font-weight: 100;
-    font-size: 15px;
-    color: rgb(59, 59, 59);
+    font-weight: 300;
+    font-size: 18px;
+    color: $grey-text;
     padding: 15px 0px;
 }
 
 .hero__content__button {
     text-align: center;
     &--activ {
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 500;
         color: white;
-        padding: 15px 20px;
+        padding: 20px 25px;
         border: 0px;
-        border-radius: 25px;
+        border-radius: 30px;
         background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
         box-shadow: 0 0 10px #0000002e;
     }
@@ -61,8 +74,8 @@ body {
 .fonction {
     padding: 30px 15px;
     h3 {
-        font-weight: 600;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 24px;
     }
 }
 
