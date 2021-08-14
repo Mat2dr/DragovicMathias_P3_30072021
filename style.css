@@ -51,10 +51,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 0px;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 .header__logo {
-  width: 60%;
+  width: 45%;
 }
 
 .hero {
@@ -67,10 +68,14 @@ body {
   justify-content: center;
   padding: 12px 0px;
   background: #EAEAEA;
-  color: #4e4e4e;
+  color: #353535;
 }
 .hero__gps__icon {
   padding: 0px 10px;
+}
+.hero__gps p {
+  font-size: 17px;
+  font-weight: 300;
 }
 
 .hero__content {
@@ -80,15 +85,16 @@ body {
 
 .hero__content__text h1 {
   text-align: center;
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0px 15px;
 }
 
 .hero__content__text h2 {
   text-align: center;
-  font-weight: 100;
-  font-size: 15px;
-  color: #3b3b3b;
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
   padding: 15px 0px;
 }
 
@@ -96,11 +102,12 @@ body {
   text-align: center;
 }
 .hero__content__button--activ {
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   color: white;
-  padding: 15px 20px;
+  padding: 20px 25px;
   border: 0px;
-  border-radius: 25px;
+  border-radius: 30px;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   box-shadow: 0 0 10px #0000002e;
 }
@@ -109,8 +116,8 @@ body {
   padding: 30px 15px;
 }
 .fonction h3 {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .fonction__button {
@@ -120,10 +127,10 @@ body {
 .fonction__button__content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: #F6F6F6;
   padding: 20px 20px;
-  margin: 10px 0px;
+  margin: 10px 5px;
   border-radius: 25px;
   box-shadow: 0 0 10px #0000002e;
 }
@@ -139,10 +146,15 @@ body {
   background: #9356dc;
   color: white;
   border-radius: 20px;
+  margin-left: -30px;
 }
 .fonction__button__content__icon {
-  padding: 0px 10px;
+  padding: 0px 15px;
   color: #9356dc;
+}
+.fonction__button__content h2 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 a {
@@ -165,8 +177,8 @@ a:visited {
   padding: 15px 0px;
 }
 .resto__titre h3 {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
 }
 .resto__annonce {
   display: flex;
