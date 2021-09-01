@@ -150,6 +150,17 @@ a:visited {
             width: 100%;
             border-radius: 15px 15px 0px 0px;
         }
+        &-new {
+            position: absolute;
+            right: 25px;
+            margin-top: 15px;
+            background: #99e2d0;
+            & p{
+                color: #1b6150;
+                padding: 10px 20px;
+                margin: 0;
+            }
+        } 
         &__content {
             display: flex;
             flex-direction: row;
