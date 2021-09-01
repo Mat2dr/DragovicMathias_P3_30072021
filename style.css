@@ -196,6 +196,17 @@ a:visited {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
+.resto__annonce-new {
+  position: absolute;
+  right: 25px;
+  margin-top: 15px;
+  background: #99e2d0;
+}
+.resto__annonce-new p {
+  color: #1b6150;
+  padding: 10px 20px;
+  margin: 0;
+}
 .resto__annonce__content {
   display: flex;
   flex-direction: row;
