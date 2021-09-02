@@ -111,9 +111,11 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 15px;
-  padding: 15px 15px;
   margin: 15px 0px;
   box-shadow: 3px 5px 8px #0000002e;
+}
+.lemenu__card__text {
+  padding: 15px 15px;
 }
 .lemenu__card__text__nom {
   padding-bottom: 2px;
@@ -127,6 +129,16 @@ body {
 .lemenu__card__prix {
   font-size: 16px;
   font-weight: 600;
+  padding-right: 15px;
+}
+.lemenu__card-validation {
+  display: none;
+  color: white;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 13px;
+  height: 100%;
 }
 
 .footer {
