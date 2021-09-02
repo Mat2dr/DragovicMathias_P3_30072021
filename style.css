@@ -249,12 +249,18 @@ a:visited {
   padding: 15px;
   color: white;
 }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #c4c4c4;
+}
 .footer__logo {
   font-family: "Shrikhand", cursive;
   padding: 10px 0px;
 }
 .footer__logo a {
-  color: white;
   font-size: 20px;
 }
 .footer li {
