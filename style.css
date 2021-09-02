@@ -127,6 +127,7 @@ body {
 .fonction__button {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .fonction__button__content {
   display: flex;
@@ -268,6 +269,17 @@ a:visited {
   flex-direction: row;
   padding: 5px 0px;
   column-gap: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .fonction__button {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+  }
+  .fonction__button__content {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
