@@ -59,6 +59,8 @@ body {
 }
 .header__back i {
   font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
