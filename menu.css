@@ -1,5 +1,157 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
 body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+}
+.header__back {
+  position: absolute;
+  left: 25px;
+}
+.header__back i {
+  font-size: 25px;
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  color: black;
+  font-size: 35px;
+}
+.header__logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  width: 100%;
+  height: 40%;
+}
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.lemenu {
+  padding: 20px 20px;
+}
+.lemenu__titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+.lemenu__titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+}
+.lemenu__titre i {
+  font-size: 25px;
+}
+.lemenu__title {
+  font-size: 17px;
+}
+.lemenu__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
+  border-radius: 15px;
+  padding: 15px 15px;
+  margin: 15px 0px;
+  box-shadow: 3px 5px 8px #0000002e;
+}
+.lemenu__card__text__nom {
+  padding-bottom: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.lemenu__card__text__info {
+  padding-top: 2px;
+  font-size: 16px;
+}
+.lemenu__card__prix {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  padding: 10px 0px;
+}
+.footer__logo a {
+  font-size: 20px;
+}
+.footer li {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+  column-gap: 10px;
 }
 
 /*# sourceMappingURL=menu.css.map */
