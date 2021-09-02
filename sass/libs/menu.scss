@@ -1,0 +1,218 @@
+@import "reset.scss";
+
+$rose: #ff79da;
+$violet: #9356dc;
+$grey-text: #7a7a7a;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    &__back {
+        position: absolute;
+        left: 25px;
+        & i {
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: rgb(70, 70, 70);
+            }
+        }
+    }
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        color: black;
+        font-size: 35px;
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+.hero {
+    width: 100%;
+    height: 40%;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    background-color: #F6F6F6;
+    border-radius: 25px 25px 0px 0px;
+}
+.lemenu {
+    padding: 20px 20px;
+    &__ligne {
+        width:50px;
+	    height:5px;
+	    background:#99e2d0;
+        margin: 5px 0px;
+    }
+    &__titre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+        & h2 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 25px;
+        }
+        & i {
+            font-size: 25px;
+        }
+    }
+    &__title {
+        font-size: 17px;
+    }
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        margin: 15px 0px;
+        box-shadow: 3px 5px 8px #0000002e;
+        -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        &:hover {
+           background-color: #f1f1f1; 
+        }
+        &__text {
+            padding: 15px 15px;
+            &__nom {
+                padding-bottom: 2px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            &__info {
+                padding-top: 2px;
+                font-size: 16px;
+            }
+        }
+        &__prix {
+            font-size: 16px;
+            font-weight: 600;
+            padding-right: 15px;
+        }
+        &-validation {
+            display: none;
+            color: white;
+            background: #99E2D0;
+            border-radius: 0 15px 15px 0;
+            right: 0px;
+            padding: 0 13px;
+            height: 100%;
+        }
+
+    }
+}
+#card {
+    &1 {
+       animation-delay: 0.0s; 
+    }
+    &2 {
+        animation-delay: 0.1s; 
+    }
+    &3 {
+        animation-delay: 0.2s; 
+    }
+    &4 {
+        animation-delay: 0.3s; 
+    }
+    &5 {
+        animation-delay: 0.4s; 
+    }
+    &6 {
+        animation-delay: 0.5s; 
+    }
+    &7 {
+        animation-delay: 0.6s; 
+    }
+    &8 {
+        animation-delay: 0.7s; 
+    }
+    &9 {
+        animation-delay: 0.8s; 
+    }
+}
+.lemenu__button {
+    text-align: center;
+    padding-bottom: 30px;
+    &--activ {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        padding: 18px 25px;
+        border: 0px;
+        border-radius: 30px;
+        background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+        box-shadow: 0 0 10px #0000002e;
+        &:hover {
+            background: linear-gradient(to bottom, #ff79da 0%, #ff79da 100%);; 
+         }
+    }
+}
+
+.footer {
+    background: #353535;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: white;
+    & a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: rgb(196, 196, 196);
+        }
+    }
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        padding: 10px 0px;
+        & a {
+            font-size: 20px;
+        }
+    }
+    & li {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 0px;
+        column-gap: 10px;
+    }
+}
+
+@-webkit-keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
