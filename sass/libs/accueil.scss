@@ -67,11 +67,14 @@ body {
         border-radius: 30px;
         background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
         box-shadow: 0 0 10px #0000002e;
+        &:hover {
+            background: linear-gradient(to bottom, #ff79da 0%,  #ff79da 100%);
+        }
     }
 }
 
 .fonction {
-    padding: 30px 15px;
+    padding: 30px 15px;  
     h3 {
         font-weight: 700;
         font-size: 24px;
@@ -90,6 +93,9 @@ body {
         margin: 10px 5px;
         border-radius: 25px;
         box-shadow: 0 0 10px #0000002e;
+        &:hover {
+            background-color: #F5EDFF;
+        }
         li {
             padding: 10px 0px;
         }
@@ -142,6 +148,9 @@ a:visited {
         margin: 15px 0px;
         border-radius: 15px;
         box-shadow: 0 0 10px #0000002e;
+        &:hover {
+            transform: scale(1.05);
+        }
         &__img img{
             height: 9rem;
             object-fit: cover;

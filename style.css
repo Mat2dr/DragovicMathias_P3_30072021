@@ -112,6 +112,9 @@ body {
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   box-shadow: 0 0 10px #0000002e;
 }
+.hero__content__button--activ:hover {
+  background: linear-gradient(to bottom, #ff79da 0%, #ff79da 100%);
+}
 
 .fonction {
   padding: 30px 15px;
@@ -134,6 +137,9 @@ body {
   margin: 10px 5px;
   border-radius: 25px;
   box-shadow: 0 0 10px #0000002e;
+}
+.fonction__button__content:hover {
+  background-color: #F5EDFF;
 }
 .fonction__button__content li {
   padding: 10px 0px;
@@ -189,6 +195,9 @@ a:visited {
   margin: 15px 0px;
   border-radius: 15px;
   box-shadow: 0 0 10px #0000002e;
+}
+.resto__annonce:hover {
+  transform: scale(1.05);
 }
 .resto__annonce__img img {
   height: 9rem;

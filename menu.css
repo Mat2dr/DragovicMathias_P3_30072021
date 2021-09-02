@@ -62,6 +62,9 @@ body {
   text-decoration: none;
   color: black;
 }
+.header__back i:hover {
+  color: #464646;
+}
 .header__logo {
   font-family: "Shrikhand", cursive;
   color: black;
@@ -90,6 +93,12 @@ body {
 .lemenu {
   padding: 20px 20px;
 }
+.lemenu__ligne {
+  width: 50px;
+  height: 5px;
+  background: #99e2d0;
+  margin: 5px 0px;
+}
 .lemenu__titre {
   display: flex;
   flex-direction: row;
@@ -115,6 +124,11 @@ body {
   border-radius: 15px;
   margin: 15px 0px;
   box-shadow: 3px 5px 8px #0000002e;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.lemenu__card:hover {
+  background-color: #f1f1f1;
 }
 .lemenu__card__text {
   padding: 15px 15px;
@@ -143,6 +157,34 @@ body {
   height: 100%;
 }
 
+#card1 {
+  animation-delay: 0s;
+}
+#card2 {
+  animation-delay: 0.1s;
+}
+#card3 {
+  animation-delay: 0.2s;
+}
+#card4 {
+  animation-delay: 0.3s;
+}
+#card5 {
+  animation-delay: 0.4s;
+}
+#card6 {
+  animation-delay: 0.5s;
+}
+#card7 {
+  animation-delay: 0.6s;
+}
+#card8 {
+  animation-delay: 0.7s;
+}
+#card9 {
+  animation-delay: 0.8s;
+}
+
 .lemenu__button {
   text-align: center;
   padding-bottom: 30px;
@@ -157,6 +199,9 @@ body {
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   box-shadow: 0 0 10px #0000002e;
 }
+.lemenu__button--activ:hover {
+  background: linear-gradient(to bottom, #ff79da 0%, #ff79da 100%);
+}
 
 .footer {
   background: #353535;
@@ -168,6 +213,9 @@ body {
 .footer a {
   text-decoration: none;
   color: white;
+}
+.footer a:hover {
+  color: #c4c4c4;
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
@@ -181,6 +229,31 @@ body {
   flex-direction: row;
   padding: 5px 0px;
   column-gap: 10px;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
