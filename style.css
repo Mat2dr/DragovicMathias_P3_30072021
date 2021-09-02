@@ -51,11 +51,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding: 15px 0px;
 }
 .header__logo {
-  width: 45%;
+  font-family: "Shrikhand", cursive;
+  color: black;
+  font-size: 35px;
 }
 
 .hero {
@@ -67,8 +68,8 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 12px 0px;
-  background: #EAEAEA;
-  color: #353535;
+  background: #f1f1f1;
+  color: #7a7a7a;
 }
 .hero__gps__icon {
   padding: 0px 10px;
@@ -94,7 +95,7 @@ body {
   text-align: center;
   font-weight: 300;
   font-size: 18px;
-  color: #353535;
+  color: #7a7a7a;
   padding: 15px 0px;
 }
 
@@ -105,7 +106,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: white;
-  padding: 20px 25px;
+  padding: 18px 25px;
   border: 0px;
   border-radius: 30px;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
@@ -129,7 +130,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   background: #F6F6F6;
-  padding: 20px 20px;
+  padding: 18px 20px;
   margin: 10px 5px;
   border-radius: 25px;
   box-shadow: 0 0 10px #0000002e;
@@ -150,7 +151,7 @@ body {
 }
 .fonction__button__content__icon {
   padding: 0px 15px;
-  color: #9356dc;
+  color: #7a7a7a;
 }
 .fonction__button__content h2 {
   font-size: 16px;
@@ -204,8 +205,8 @@ a:visited {
 }
 .resto__annonce-new p {
   color: #1b6150;
+  font-size: 15px;
   padding: 10px 20px;
-  margin: 0;
 }
 .resto__annonce__content {
   display: flex;
@@ -240,8 +241,12 @@ a:visited {
   color: white;
 }
 .footer__logo {
-  width: 100px;
+  font-family: "Shrikhand", cursive;
   padding: 10px 0px;
+}
+.footer__logo a {
+  color: white;
+  font-size: 20px;
 }
 .footer li {
   display: flex;

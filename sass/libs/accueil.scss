@@ -1,6 +1,6 @@
 $rose: #ff79da;
 $violet: #9356dc;
-$grey-text: #353535;
+$grey-text: #7a7a7a;
 
 
 body {
@@ -11,10 +11,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 10px;
+    padding: 15px 0px;
     &__logo {
-        width: 45%;
+        font-family: 'Shrikhand', cursive;
+        color: black;
+        font-size: 35px;
     }
 }
 
@@ -26,8 +27,8 @@ body {
         flex-direction: row;
         justify-content: center;
         padding: 12px 0px;
-        background: #EAEAEA;
-        color: $grey-text;
+        background: #f1f1f1;
+        color: #7a7a7a;
         &__icon {
             padding: 0px 10px;
         }
@@ -35,7 +36,6 @@ body {
             font-size: 17px;
             font-weight: 300;
         }
-
     }
 }
 .hero__content{
@@ -62,13 +62,12 @@ body {
         font-size: 16px;
         font-weight: 500;
         color: white;
-        padding: 20px 25px;
+        padding: 18px 25px;
         border: 0px;
         border-radius: 30px;
         background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
         box-shadow: 0 0 10px #0000002e;
     }
-
 }
 
 .fonction {
@@ -87,7 +86,7 @@ body {
         align-items: center;
         justify-content: flex-start;
         background: #F6F6F6;
-        padding: 20px 20px;
+        padding: 18px 20px;
         margin: 10px 5px;
         border-radius: 25px;
         box-shadow: 0 0 10px #0000002e;
@@ -107,7 +106,7 @@ body {
         }
         &__icon {
             padding: 0px 15px;
-            color: #9356dc;
+            color: $grey-text;
         }
         & h2 {
             font-size: 16px;
@@ -157,8 +156,8 @@ a:visited {
             background: #99e2d0;
             & p{
                 color: #1b6150;
+                font-size: 15px;
                 padding: 10px 20px;
-                margin: 0;
             }
         } 
         &__content {
@@ -196,8 +195,12 @@ a:visited {
     padding: 15px;
     color: white;
     &__logo {
-        width: 100px;
+        font-family: 'Shrikhand', cursive;
         padding: 10px 0px;
+        & a {
+            color: white;
+            font-size: 20px;
+        }
     }
     & li {
         display: flex;
