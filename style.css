@@ -241,10 +241,24 @@ a:visited {
   font-size: 15px;
   padding: 2px 0px;
 }
-.resto__annonce__content__icon {
+.resto__annonce__content__icon-empty {
   padding: 10px 15px;
   font-size: 25px;
   color: #535353;
+  background-color: white;
+  cursor: pointer;
+}
+.resto__annonce__content__icon-empty:hover {
+  display: none;
+}
+.resto__annonce__content__icon-full {
+  padding: 10px 15px;
+  font-size: 25px;
+}
+.resto__annonce__content__icon-full:hover {
+  background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
