@@ -76,10 +76,7 @@ body {
 }
 
 .fonction {
-    padding: 30px 15px;  
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 2rem;
+    padding: 30px 30px;  
     h3 {
         font-weight: 700;
         font-size: 24px;
@@ -140,9 +137,6 @@ a:visited {
     flex-direction: column;
     padding: 30px 15px;
     background: #F6F6F6;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 2rem;
     &__titre {
         padding: 15px 0px;
         & h3 {
@@ -256,6 +250,9 @@ a:visited {
 @media screen and (min-width: 1000px) {
     .fonction {
         padding: 30px 0px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 2rem;
         &__button {
             flex-direction: row;
             justify-content: center;
@@ -268,6 +265,9 @@ a:visited {
 
     .resto {
         padding: 15px 25px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 15px 2rem;
         &__lesannonces {
             display: flex;
             flex-direction: row;
@@ -282,6 +282,13 @@ a:visited {
 
     .footer {
         padding: 25px;
+        &__content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 2rem;
+            width: 100%;
+        }
+       
             ul{
                 display: flex;
                 justify-content: space-between;
