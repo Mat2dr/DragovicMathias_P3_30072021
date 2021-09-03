@@ -16,6 +16,7 @@ body {
         font-family: 'Shrikhand', cursive;
         color: black;
         font-size: 35px;
+        cursor: pointer;
     }
 }
 
@@ -67,6 +68,7 @@ body {
         border-radius: 30px;
         background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
         box-shadow: 0 0 10px #0000002e;
+        cursor: pointer;
         &:hover {
             background: linear-gradient(to bottom, #ff79da 0%,  #ff79da 100%);
         }
@@ -75,6 +77,9 @@ body {
 
 .fonction {
     padding: 30px 15px;  
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
     h3 {
         font-weight: 700;
         font-size: 24px;
@@ -94,6 +99,7 @@ body {
         margin: 10px 5px;
         border-radius: 25px;
         box-shadow: 0 0 10px #0000002e;
+        cursor: pointer;
         &:hover {
             background-color: #F5EDFF;
         }
@@ -134,6 +140,9 @@ a:visited {
     flex-direction: column;
     padding: 30px 15px;
     background: #F6F6F6;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
     &__titre {
         padding: 15px 0px;
         & h3 {
@@ -151,7 +160,7 @@ a:visited {
         border-radius: 15px;
         box-shadow: 0 0 10px #0000002e;
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
         &__img img{
             height: 9rem;
@@ -224,9 +233,6 @@ a:visited {
     & a {
         text-decoration: none;
         color: white;
-        &:hover {
-            color: rgb(196, 196, 196);
-        }
     }
     &__logo {
         font-family: 'Shrikhand', cursive;
@@ -240,27 +246,57 @@ a:visited {
         flex-direction: row;
         padding: 5px 0px;
         column-gap: 10px;
+        cursor: pointer;
     }
+}
+.footer li:hover {
+    transform: scale(1.01);
 }
 
 @media screen and (min-width: 1000px) {
-    .fonction__button {
-        flex-direction: row;
-        justify-content: center;
-        column-gap: 15px;
-        &__content {
-            width: 30%;
+    .fonction {
+        padding: 30px 0px;
+        &__button {
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 15px;
+            &__content {
+                width: 30%;
+            }
         }
     }
-    .resto__lesannonces {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-content: space-around;
-    }
-    .resto__annonce {
-        width: 48%;
+
+    .resto {
+        padding: 15px 25px;
+        &__lesannonces {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        &__annonce {
+            width: 48%;
+        }
     }
 
+    .footer {
+        padding: 25px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .resto {
+        border-radius: 25px;
+        margin-bottom: 40px;
+        &__annonce__img img {
+            height: 13rem;
+        }
+    }
 }
