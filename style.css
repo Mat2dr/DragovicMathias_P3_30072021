@@ -189,6 +189,7 @@ a:visited {
   font-size: 24px;
 }
 .resto__annonce {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -208,9 +209,12 @@ a:visited {
   border-radius: 15px 15px 0px 0px;
 }
 .resto__annonce-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 25px;
-  margin-top: 15px;
+  top: 20px;
   background: #99e2d0;
 }
 .resto__annonce-new p {
@@ -279,6 +283,18 @@ a:visited {
   }
   .fonction__button__content {
     width: 30%;
+  }
+
+  .resto__lesannonces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .resto__annonce {
+    width: 48%;
   }
 }
 
