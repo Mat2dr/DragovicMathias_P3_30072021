@@ -267,5 +267,41 @@ body {
     opacity: 1;
   }
 }
+@media screen and (min-width: 1000px) {
+  .hero__img img {
+    height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .menu {
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px 2rem;
+    margin-bottom: 40px;
+    border-radius: 25px;
+  }
+
+  .lemenu__manger {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 25px;
+  }
+
+  .lemenu__card {
+    text-overflow: ellipsis;
+  }
+  .lemenu__card__text__nom {
+    width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lemenu__card__text__nom p {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=menu.css.map */
