@@ -185,9 +185,6 @@ body {
     & a {
         text-decoration: none;
         color: white;
-        &:hover {
-            color: rgb(196, 196, 196);
-        }
     }
     &__logo {
         font-family: 'Shrikhand', cursive;
@@ -201,8 +198,13 @@ body {
         flex-direction: row;
         padding: 5px 0px;
         column-gap: 10px;
+        cursor: pointer;
     }
 }
+.footer li:hover {
+    transform: scale(1.01);
+}
+
 
 @-webkit-keyframes fade-in-bottom {
     0% {
@@ -262,5 +264,21 @@ body {
             }
         }
       }
+
+      .footer {
+        padding: 25px;
+        &__content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 2rem;
+            width: 100%;
+        }
+       
+            ul{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
 
   }

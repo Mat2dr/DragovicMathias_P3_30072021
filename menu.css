@@ -226,9 +226,6 @@ body {
   text-decoration: none;
   color: white;
 }
-.footer a:hover {
-  color: #c4c4c4;
-}
 .footer__logo {
   font-family: "Shrikhand", cursive;
   padding: 10px 0px;
@@ -241,6 +238,11 @@ body {
   flex-direction: row;
   padding: 5px 0px;
   column-gap: 10px;
+  cursor: pointer;
+}
+
+.footer li:hover {
+  transform: scale(1.01);
 }
 
 @-webkit-keyframes fade-in-bottom {
@@ -301,6 +303,21 @@ body {
   }
   .lemenu__card__text__nom p {
     font-size: 16px;
+  }
+
+  .footer {
+    padding: 25px;
+  }
+  .footer__content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 2rem;
+    width: 100%;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
