@@ -296,7 +296,6 @@ body {
     text-overflow: ellipsis;
   }
   .lemenu__card__text__nom {
-    width: 320px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
