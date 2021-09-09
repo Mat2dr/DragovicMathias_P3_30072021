@@ -376,24 +376,35 @@ a:visited {
   font-size: 15px;
   padding: 2px 0px;
 }
+.resto__annonce__content__icon {
+  padding: 10px 15px;
+}
 .resto__annonce__content__icon-empty {
   padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  opacity: 1;
   font-size: 25px;
+  font-weight: 400;
   color: #535353;
-  background-color: white;
   cursor: pointer;
 }
-.resto__annonce__content__icon-empty:hover {
-  display: none;
-}
 .resto__annonce__content__icon-full {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  opacity: 0;
+  transition: 0.3s;
   padding: 10px 15px;
   font-size: 25px;
-}
-.resto__annonce__content__icon-full:hover {
+  font-weight: 900;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.resto__annonce__content__icon-full:hover {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1000px) {
@@ -505,9 +516,15 @@ body {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   cursor: pointer;
+  overflow: hidden;
 }
-.lemenu__card:hover {
-  background-color: #f1f1f1;
+.lemenu__card:hover .lemenu__card-validation {
+  margin-right: 0px;
+  transition: 0.3s;
+}
+.lemenu__card:hover .lemenu__card-validation-icon {
+  transform: rotate(360deg);
+  transition: 0.3s;
 }
 .lemenu__card__text {
   display: flex;
@@ -548,6 +565,10 @@ body {
   border-radius: 0 15px 15px 0;
   width: 70px;
   padding: 0 13px;
+  margin-right: -70px;
+}
+.lemenu__card-validation-icon {
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 1000px) {
