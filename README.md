@@ -13,8 +13,10 @@ A partir d'un design proposé par le designer UI, je dois realiser le site.
 - :two: Création du code par sections (Header, Body, Footer).
 - :three: Création du style CSS avec SASS du site.
 - :four: Responsive design: Adapté le site aux differentes d'ecrans.
-- :five: Mettre la page sur GitHub Pages.
+- :five: Mettre en œuvre des effets CSS graphiques avancés.
+- :six: Assurer la cohérence graphique d'un site web.
+- :seven: Mettre la page sur GitHub Pages.
 
 ## Liens:
 
-:link: GitHub Pages du projet: indisponible :link:
+:link: GitHub Pages du projet: https://mat2dr.github.io/DragovicMathias_P3_30072021/ :link:
