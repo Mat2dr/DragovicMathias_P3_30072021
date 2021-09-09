@@ -376,30 +376,26 @@ a:visited {
   font-size: 15px;
   padding: 2px 0px;
 }
+.resto__annonce__content__icon {
+  padding: 10px 15px;
+}
 .resto__annonce__content__icon-empty {
   padding: 10px 15px;
   position: absolute;
   right: 0;
-  top: 1;
+  bottom: 10px;
   opacity: 1;
-}
-.resto__annonce__content__icon-empty i {
   font-size: 25px;
   font-weight: 400;
   color: #535353;
   cursor: pointer;
 }
 .resto__annonce__content__icon-full {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   right: 0;
-  top: 1;
+  bottom: 10px;
   opacity: 0;
   transition: 0.3s;
-}
-.resto__annonce__content__icon-full i {
   padding: 10px 15px;
   font-size: 25px;
   font-weight: 900;
