@@ -156,22 +156,37 @@ a:visited {
               }
             &__icon-empty {
                 padding: 10px 15px;
-                font-size: 25px;
-                color: rgb(83, 83, 83);
-                background-color: white;
-                cursor: pointer;
-                &:hover {
-                    display: none;
+                position: absolute;
+                right: 0;
+                top: 1;
+                opacity: 1;
+                & i {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: rgb(83, 83, 83);
+                    cursor: pointer;
                 }
             }
             &__icon-full {
-                padding: 10px 15px;
-                font-size: 25px;
-                &:hover {
-                    background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 1;
+                opacity: 0;
+                transition: 0.3s;
+                & i {
+                    padding: 10px 15px;
+                    font-size: 25px;
+                    font-weight: 900;
+                    background: linear-gradient(to bottom, $rose 0%, $violet 100%);;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+                &:hover {
+                    opacity: 1;
+                }             
             }
         }
     }
