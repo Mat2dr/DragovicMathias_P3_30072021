@@ -433,14 +433,12 @@ body {
   width: 100%;
   height: 40%;
 }
-.hero__img img {
+.hero__img {
   width: 100%;
-  max-width: 100%;
-  height: 200px;
   object-fit: cover;
   position: relative;
 }
-.hero__img img::before {
+.hero__img::before {
   display: flex;
   position: absolute;
   bottom: 0;
