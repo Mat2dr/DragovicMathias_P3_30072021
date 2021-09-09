@@ -19,7 +19,7 @@ body {
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
             content: "";
-            background-color: #F6F6F6;
+            background-color: $grey-light;
             max-width: 1500px;
             margin: auto;
             padding: 0px 2rem;
@@ -28,14 +28,14 @@ body {
 }
 
 .menu {
-    background-color: #F6F6F6;
+    background-color: $grey-light;
 }
 .lemenu {
     padding: 20px 20px;
     &__ligne {
         width:50px;
 	    height:5px;
-	    background:#99e2d0;
+	    background:$blue;
         margin: 5px 0px;
     }
     &__titre {
@@ -60,7 +60,7 @@ body {
         background-color: white;
         border-radius: 15px;
         margin: 15px 0px;
-        box-shadow: 3px 5px 8px #0000002e;
+        @include shadow;
         -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         cursor: pointer;
@@ -89,17 +89,13 @@ body {
                 }
             }
             &__prix {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include center;
                 font-size: 16px;
                 font-weight: 600;
             }
         }
         &-validation {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include center;
             font-size: 23px;
             color: white;
             background: #99E2D0;
@@ -110,107 +106,6 @@ body {
 
     }
 }
-#card {
-    &1 {
-       animation-delay: 0.0s; 
-    }
-    &2 {
-        animation-delay: 0.1s; 
-    }
-    &3 {
-        animation-delay: 0.2s; 
-    }
-    &4 {
-        animation-delay: 0.3s; 
-    }
-    &5 {
-        animation-delay: 0.4s; 
-    }
-    &6 {
-        animation-delay: 0.5s; 
-    }
-    &7 {
-        animation-delay: 0.6s; 
-    }
-    &8 {
-        animation-delay: 0.7s; 
-    }
-    &9 {
-        animation-delay: 0.8s; 
-    }
-}
-.lemenu__button {
-    text-align: center;
-    padding-bottom: 30px;
-    &--activ {
-        font-size: 16px;
-        font-weight: 500;
-        color: white;
-        padding: 18px 25px;
-        border: 0px;
-        border-radius: 30px;
-        background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
-        box-shadow: 0 0 10px #0000002e;
-        &:hover {
-            background: linear-gradient(to bottom, #ff79da 0%, #ff79da 100%);; 
-         }
-    }
-}
-
-.footer {
-    background: #353535;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    color: white;
-    & a {
-        text-decoration: none;
-        color: white;
-    }
-    &__logo {
-        font-family: 'Shrikhand', cursive;
-        padding: 10px 0px;
-        & a {
-            font-size: 20px;
-        }
-    }
-    & li {
-        display: flex;
-        flex-direction: row;
-        padding: 5px 0px;
-        column-gap: 10px;
-        cursor: pointer;
-    }
-}
-.footer li:hover {
-    transform: scale(1.01);
-}
-
-
-@-webkit-keyframes fade-in-bottom {
-    0% {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in-bottom {
-    0% {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
   @media screen and (min-width: 1000px) {
       .hero__img img{
@@ -225,6 +120,7 @@ body {
           padding: 30px 2rem;
           margin-bottom: 40px;
           border-radius: 0px 0px 25px 25px;
+          @include shadow;
       }
 
       .lemenu__manger {
@@ -240,21 +136,4 @@ body {
             }
         }
       }
-
-      .footer {
-        padding: 25px;
-        &__content {
-            max-width: 1200px;
-            margin: auto;
-            padding: 15px 2rem;
-            width: 100%;
-        }
-       
-            ul{
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-            }
-        }
-
   }
