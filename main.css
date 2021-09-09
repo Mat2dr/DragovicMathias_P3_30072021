@@ -43,6 +43,80 @@ td, th {
   padding: 0;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+}
+.header__back {
+  position: absolute;
+  left: 25px;
+}
+.header__back i {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.header__back i:hover {
+  color: #464646;
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  color: black;
+  font-size: 35px;
+}
+.header__logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  padding: 10px 0px;
+}
+.footer__logo a {
+  font-size: 20px;
+}
+.footer li {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.footer li:hover {
+  transform: scale(1.01);
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 25px;
+  }
+  .footer__content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 2rem;
+    width: 100%;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -353,34 +427,6 @@ a:visited {
 }
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0px;
-}
-.header__back {
-  position: absolute;
-  left: 25px;
-}
-.header__back i {
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-}
-.header__back i:hover {
-  color: #464646;
-}
-.header__logo {
-  font-family: "Shrikhand", cursive;
-  color: black;
-  font-size: 35px;
-}
-.header__logo a {
-  text-decoration: none;
-  color: black;
 }
 
 .hero {
