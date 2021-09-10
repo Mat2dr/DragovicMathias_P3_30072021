@@ -517,11 +517,11 @@ body {
 }
 .lemenu__card:hover .lemenu__card-validation {
   margin-right: 0px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .lemenu__card:hover .lemenu__card-validation-icon {
-  transform: rotate(360deg);
-  transition: 0.3s;
+  transform: rotate(-360deg);
+  transition: 0.5s;
 }
 .lemenu__card__text {
   display: flex;
@@ -565,7 +565,7 @@ body {
   margin-right: -70px;
 }
 .lemenu__card-validation-icon {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 @media screen and (min-width: 1000px) {

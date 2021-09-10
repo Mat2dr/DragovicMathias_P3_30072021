@@ -68,10 +68,10 @@ body {
         &:hover {
             .lemenu__card-validation {
                 margin-right: 0px;
-                transition: 0.3s;
+                transition: 0.5s;
                 &-icon {
-                    transform: rotate(360deg);
-                    transition: 0.3s;
+                    transform: rotate(-360deg);
+                    transition: 0.5s;
                 }
             }
         }
@@ -112,7 +112,7 @@ body {
             padding: 0 13px;
             margin-right: -70px; 
             &-icon {
-                transform: rotate(180deg);
+                transform: rotate(0deg);
             }       
         }
 
