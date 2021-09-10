@@ -39,6 +39,7 @@ body {
         margin: 5px 0px;
     }
     &__titre {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -85,15 +86,24 @@ body {
                 padding-bottom: 2px;
                 font-size: 18px;
                 font-weight: 600;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
                 & h3 {
                     padding-bottom: 2px;
                     font-size: 18px;
                     font-weight: 600;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
                 & p {
                     padding-top: 2px;
                     font-size: 17px;
                     font-weight: 500;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
             &__prix {
@@ -137,9 +147,9 @@ body {
 
       .lemenu__manger {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           flex-wrap: wrap;
-          column-gap: 25px;
+          column-gap: 10px;
       }
       .lemenu__card {
         &__text__nom {
@@ -148,4 +158,13 @@ body {
             }
         }
       }
+      .lemenu__entrees {
+          width: 30%;
+      }
+      .lemenu__plats {
+        width: 30%;
+    }
+    .lemenu__desserts {
+        width: 30%;
+    }
   }

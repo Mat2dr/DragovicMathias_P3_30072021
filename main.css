@@ -488,6 +488,7 @@ body {
   margin: 5px 0px;
 }
 .lemenu__titre {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -534,16 +535,25 @@ body {
   padding-bottom: 2px;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .lemenu__card__text__nom h3 {
   padding-bottom: 2px;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .lemenu__card__text__nom p {
   padding-top: 2px;
   font-size: 17px;
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .lemenu__card__text__prix {
   display: flex;
@@ -587,13 +597,25 @@ body {
 
   .lemenu__manger {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 25px;
+    column-gap: 10px;
   }
 
   .lemenu__card__text__nom p {
     font-size: 16px;
+  }
+
+  .lemenu__entrees {
+    width: 30%;
+  }
+
+  .lemenu__plats {
+    width: 30%;
+  }
+
+  .lemenu__desserts {
+    width: 30%;
   }
 }
 
