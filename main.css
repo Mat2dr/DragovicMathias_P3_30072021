@@ -384,9 +384,7 @@ a:visited {
   position: absolute;
   right: 0;
   bottom: 10px;
-  opacity: 1;
   font-size: 25px;
-  font-weight: 400;
   color: #535353;
   cursor: pointer;
 }
@@ -395,16 +393,15 @@ a:visited {
   right: 0;
   bottom: 10px;
   opacity: 0;
-  transition: 0.3s;
   padding: 10px 15px;
   font-size: 25px;
-  font-weight: 900;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .resto__annonce__content__icon-full:hover {
   opacity: 1;
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 1000px) {
@@ -491,6 +488,7 @@ body {
   margin: 5px 0px;
 }
 .lemenu__titre {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -520,11 +518,11 @@ body {
 }
 .lemenu__card:hover .lemenu__card-validation {
   margin-right: 0px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .lemenu__card:hover .lemenu__card-validation-icon {
-  transform: rotate(360deg);
-  transition: 0.3s;
+  transform: rotate(-360deg);
+  transition: 0.5s;
 }
 .lemenu__card__text {
   display: flex;
@@ -537,16 +535,25 @@ body {
   padding-bottom: 2px;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .lemenu__card__text__nom h3 {
   padding-bottom: 2px;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .lemenu__card__text__nom p {
   padding-top: 2px;
   font-size: 17px;
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .lemenu__card__text__prix {
   display: flex;
@@ -568,7 +575,7 @@ body {
   margin-right: -70px;
 }
 .lemenu__card-validation-icon {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 @media screen and (min-width: 1000px) {
@@ -590,13 +597,25 @@ body {
 
   .lemenu__manger {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 25px;
+    column-gap: 10px;
   }
 
   .lemenu__card__text__nom p {
     font-size: 16px;
+  }
+
+  .lemenu__entrees {
+    width: 30%;
+  }
+
+  .lemenu__plats {
+    width: 30%;
+  }
+
+  .lemenu__desserts {
+    width: 30%;
   }
 }
 
