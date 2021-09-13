@@ -88,6 +88,7 @@ td, th {
 }
 .footer__logo a {
   font-size: 20px;
+  color: white !important;
 }
 .footer li {
   display: flex;
