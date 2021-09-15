@@ -62,17 +62,16 @@ body {
         border-radius: 15px;
         margin: 15px 0px;
         @include shadow;
+        transition: all 0.4s ease;
         -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         cursor: pointer;
         overflow: hidden;
         &:hover {
+            padding-right: 70px;
             .lemenu__card-validation {
-                margin-right: 0px;
-                transition: 0.5s;
                 &-icon {
                     transform: rotate(-360deg);
-                    transition: 0.5s;
                 }
             }
         }
@@ -127,6 +126,9 @@ body {
         }
 
     }
+}
+.lemenu__card .lemenu__card-validation-icon {
+    transition: all 0.4s ease;
 }
 
   @media screen and (min-width: 1000px) {

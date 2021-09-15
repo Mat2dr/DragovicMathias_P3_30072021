@@ -184,6 +184,7 @@ td, th {
   padding: 18px 25px;
   border: 0px;
   border-radius: 30px;
+  cursor: pointer;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   box-shadow: 3px 5px 8px #cfcfcf;
 }
@@ -201,6 +202,7 @@ td, th {
   padding: 18px 25px;
   border: 0px;
   border-radius: 30px;
+  cursor: pointer;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   box-shadow: 0 0 10px #0000002e;
   cursor: pointer;
@@ -382,6 +384,7 @@ a:visited {
 }
 .resto__annonce__content__icon {
   padding: 10px 15px;
+  cursor: pointer;
 }
 .resto__annonce__content__icon-empty {
   padding: 10px 15px;
@@ -515,18 +518,17 @@ body {
   border-radius: 15px;
   margin: 15px 0px;
   box-shadow: 3px 5px 8px #cfcfcf;
+  transition: all 0.4s ease;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   cursor: pointer;
   overflow: hidden;
 }
-.lemenu__card:hover .lemenu__card-validation {
-  margin-right: 0px;
-  transition: 0.5s;
+.lemenu__card:hover {
+  padding-right: 70px;
 }
 .lemenu__card:hover .lemenu__card-validation-icon {
   transform: rotate(-360deg);
-  transition: 0.5s;
 }
 .lemenu__card__text {
   display: flex;
@@ -580,6 +582,10 @@ body {
 }
 .lemenu__card-validation-icon {
   transform: rotate(0deg);
+}
+
+.lemenu__card .lemenu__card-validation-icon {
+  transition: all 0.4s ease;
 }
 
 @media screen and (min-width: 1000px) {
