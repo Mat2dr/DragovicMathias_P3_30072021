@@ -55,3 +55,25 @@
       opacity: 1;
     }
   }
+
+
+  @-webkit-keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+      height: 0px;
+    }
+  }
+  @keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+      height: 0px;
+    }
+  }
