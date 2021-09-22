@@ -173,6 +173,36 @@ td, th {
     opacity: 1;
   }
 }
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    opacity: 1;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    height: 0px;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    opacity: 1;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    height: 0px;
+  }
+}
 .lemenu__button {
   text-align: center;
   padding-bottom: 30px;
