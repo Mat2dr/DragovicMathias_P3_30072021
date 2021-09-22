@@ -176,6 +176,11 @@ td, th {
 @-webkit-keyframes loader {
   0% {
     opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    opacity: 1;
+    height: 100vh;
   }
   100% {
     opacity: 0;
@@ -186,6 +191,11 @@ td, th {
 @keyframes loader {
   0% {
     opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    opacity: 1;
+    height: 100vh;
   }
   100% {
     opacity: 0;
@@ -236,14 +246,14 @@ td, th {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: loader 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: loader 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: loader 1s both;
+  animation: loader 1s both;
 }
 
 .loader {
   border: 16px solid #f3f3f3;
   /* Light grey */
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #99e2d0;
   /* Blue */
   border-radius: 50%;
   width: 120px;

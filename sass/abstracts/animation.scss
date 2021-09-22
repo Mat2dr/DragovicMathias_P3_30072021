@@ -60,6 +60,11 @@
   @-webkit-keyframes loader {
     0% {
       opacity: 1;
+      height: 100vh;
+    }
+    99% {
+      opacity: 1;
+      height: 100vh;
     }
     100% {
       opacity: 0;
@@ -70,6 +75,11 @@
   @keyframes loader {
     0% {
       opacity: 1;
+      height: 100vh;
+    }
+    99% {
+      opacity: 1;
+      height: 100vh;
     }
     100% {
       opacity: 0;
