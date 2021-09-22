@@ -173,12 +173,12 @@ a:visited {
                     opacity: 0;
                     padding: 10px 15px;
                     font-size: 25px;
-                    background: linear-gradient(to bottom, $rose 0%, $violet 100%);;
+                    background: linear-gradient(to bottom, $rose 0%, $violet 100%);
+                    transition: 0.3s ease;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     &:hover {
                         opacity: 1;
-                        transition: 0.3s;
                     } 
                 }
 

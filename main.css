@@ -403,12 +403,12 @@ a:visited {
   padding: 10px 15px;
   font-size: 25px;
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  transition: 0.3s ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .resto__annonce__content__icon-full:hover {
   opacity: 1;
-  transition: 0.3s;
 }
 
 @media screen and (min-width: 1000px) {
