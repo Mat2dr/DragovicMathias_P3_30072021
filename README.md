@@ -17,6 +17,10 @@ A partir d'un design proposé par le designer UI, je dois realiser le site.
 - :six: Assurer la cohérence graphique d'un site web.
 - :seven: Mettre la page sur GitHub Pages.
 
+Pour modifier le sass (mettre dans la console) : 
+```
+./dart-sass/sass sass/main.scss main.css --watch
+```
 ## Liens:
 
 :link: GitHub Pages du projet: https://mat2dr.github.io/DragovicMathias_P3_30072021/ :link:
