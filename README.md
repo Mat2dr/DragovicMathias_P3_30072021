@@ -6,6 +6,7 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 Finis, les temps d'attente au restaurant !<br />
 
 A partir d'un design proposé par le designer UI, je dois realiser le site.
+Les maquettes sont disponibles dans le dossier "Maquettes".
 
 ## Etapes:
 
@@ -21,6 +22,7 @@ Pour modifier le sass (mettre dans la console) :
 ```
 ./dart-sass/sass sass/main.scss main.css --watch
 ```
+
 ## Liens:
 
 :link: GitHub Pages du projet: https://mat2dr.github.io/DragovicMathias_P3_30072021/ :link:
