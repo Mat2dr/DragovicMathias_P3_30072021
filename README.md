@@ -5,7 +5,7 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.<br />
 Finis, les temps d'attente au restaurant !<br />
 
-A partir d'un design proposé par le designer UI, je dois realiser le site.
+A partir d'un design proposé par le designer UI, je dois realiser le site.<br />
 Les maquettes sont disponibles dans le dossier "Maquettes".
 
 ## Etapes:
